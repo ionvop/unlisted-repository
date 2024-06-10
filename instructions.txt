@@ -1,0 +1,41 @@
+Finalizing the Name for the Company and the Services Offered
+
+Name of the Company:
+    Hobbit
+
+Services Offered with Prices:
+    Posters:
+        Customizable Size (per sq. inch)
+        Price=Base Price+ (Size in sq. Inches x Rate per sq. inch)
+
+    Stickers
+        Size
+        Quantity
+        Shape
+        (option for waterproof stickers)
+        Price = (Base Price + Size in sq. Inches x Rate per sq. inch) x Quantity x Shape Multiplier + Waterproof Option Cost
+
+    Mouse Pads
+        Size
+        Surface Options (cloth, hard, gel)
+        Price Base Price + (Size in sq. Inches x Rate per sq. inch) + Surface Option Cost
+
+    Playmats
+        Size
+        Thickness
+        Price-Base Price + (Size in sq. Inches x Rate per sq. inch) + Thickness Cost
+
+Create a partial program's algorithm
+- Greet the customer
+- Ask for the services that they want to order. This query will be repeated until the customer decides that they have enough.
+
+- Then, they may revise their order. Removing or reducing the amount that they ordered.
+- The program must be able to take track of the amount that the customer orders. This will be recorded in a separate text file.
+
+- When the time comes for the program to calculate shipping prices, it will open a dictionary or list of the shipping prices for each country.
+- The string method will be for charm, we will lowercase inputs from the customer to standardize their responses.
+
+- If a customer has spent more than Php 2,000.00 on the store, they could have free shipping.
+- Ask for the customer's personal information (name, phone number, address)
+- Display the receipt
+- Ask if the customer would like to make another transaction/order
