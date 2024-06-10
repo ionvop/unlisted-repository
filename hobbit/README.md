@@ -1,0 +1,2 @@
+# hobbit
+program help user order custom items like posters, stickers, mouse pads, playmats. user pick item, give size, shape, and options. program calculate price, show user total. user give name, address, phone. program make receipt, save order. user can add, remove items. program check shipping cost, show receipt, thank user, ez profit.
