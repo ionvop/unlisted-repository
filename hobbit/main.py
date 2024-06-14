@@ -225,7 +225,17 @@ def finalize_order(order: list, prices: dict) -> None:
     print()
     print("Please enter your personal information.")
     name = input("Name: ")
-    phone = input("Phone Number: ")
+
+    # Repeat until a valid phone number is entered
+    while True:
+        phone = input("Phone Number: ")
+
+        if not is_valid_phone(phone):
+            print("Invalid phone number. Please try again. (Example phone number: 09112223333)")
+            continue
+        
+        break
+
     address = input("Address: ")
     total_price = sum(item['price'] for item in order)
     total_price = round(total_price, 2)
@@ -352,6 +362,18 @@ def print_services() -> None:
     print("1. Stickers")
     print("2. Mouse Pads")
     print("3. Playmats")
+
+
+def is_valid_phone(phone: str) -> bool:
+    # Check if the phone number is valid
+    if len(phone) != 11:
+        return False
+
+    for char in phone:
+        if char not in "0123456789":
+            return False
+        
+    return True
 
 
 if __name__ == "__main__":
